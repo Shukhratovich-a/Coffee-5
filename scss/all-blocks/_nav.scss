@@ -41,7 +41,7 @@
 @media only screen and(max-width:768px) {
     .header .nav__list {
         position: absolute;
-        top: 116px;
+        top: 119px;
         right: 0;
         bottom: 0;
         left: 0;
@@ -89,7 +89,13 @@
         display: block;
     }
 
-    .header--active .nav__burger{
-        background-image: url('../images/svg/x.svg');
+    .header--active .nav__burger {
+        background-image: url("../images/svg/x.svg");
+    }
+}
+
+@media only screen and(max-width:425px) {
+    .header .nav__list {
+        top: 98px;
     }
 }
