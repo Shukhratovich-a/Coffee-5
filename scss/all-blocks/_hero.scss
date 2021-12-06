@@ -32,11 +32,13 @@
     }
 }
 
-@media only screen and(max-width:768px) {
+@media only screen and(max-width:1050px) {
     .hero .container {
         margin-bottom: 200px;
     }
+}
 
+@media only screen and(max-width:768px) {
     .hero__inner {
         padding: 104px 58px;
         background-size: 1284px 854px;

@@ -4,3 +4,17 @@
     align-items: center;
     padding: 45px 20px;
 }
+
+@media only screen and(max-width: 768px) {
+    .header .container{
+        padding-top: 40px;
+        padding-bottom: 53px;
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .header .container{
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+}
