@@ -106,3 +106,10 @@
         max-width: 280px;
     }
 }
+
+@media only screen and(max-width:425px) {
+    .hero__heading {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}

@@ -52,6 +52,10 @@
 }
 
 @media only screen and(max-width:768px) {
+    .footer .container {
+        margin-bottom: 72px;
+    }
+
     .footer__inner {
         flex-direction: column;
         padding: 54px 30px;
