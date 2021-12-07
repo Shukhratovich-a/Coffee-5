@@ -1,3 +1,7 @@
+.create-hero .container{
+    margin-bottom: 170px;
+}
+
 .create-hero__inner {
     padding: 134px 85px;
     color: $light-cream;
@@ -28,9 +32,14 @@
 }
 
 @media only screen and(max-width: 768px) {
+    .create-hero .container{
+        margin-bottom: 150px;
+    }
+
     .create-hero__inner {
+        padding: 126px 58px;
         background-size: 1104px 736px;
-        background-position: 0 center;
+        background-position: right -370px center;
     }
 
     .create-hero__heading {
@@ -40,7 +49,48 @@
     }
 
     .create-hero__text {
+        max-width: 400px;
         font-size: 15px;
         line-height: 25px;
+    }
+}
+
+@media only screen and(max-width: 550px) {
+    .create-hero .container{
+        margin-bottom: 120px;
+    }
+
+    .create-hero__inner {
+        position: relative;
+        z-index: -1;
+        background-size: 744px 496px;
+        background-position: 0;
+        padding: 100px 24px;
+        padding-bottom: 136px;
+        text-align: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: inherit;
+            display: block;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: inherit;
+        }
+    }
+
+    .create-hero__heading {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+
+    .create-hero__text {
+        max-width: 280px;
+        margin: 0 auto;
     }
 }
