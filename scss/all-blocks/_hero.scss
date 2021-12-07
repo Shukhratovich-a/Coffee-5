@@ -63,8 +63,7 @@
 @media only screen and(max-width:524px) {
     .hero__inner {
         position: relative;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 100px 24px;
         z-index: 0;
 
         &::after {

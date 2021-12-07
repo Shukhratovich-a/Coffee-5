@@ -89,17 +89,11 @@
 
     .footer .nav__item + .nav__item {
         margin-left: 0;
+        margin-top: 24px;
     }
 
-    .footer .nav__item {
-        padding: 12px 0;
-
-        &:first-child {
-            padding-top: 0;
-        }
-
-        &:last-child {
-            padding-bottom: 0;
-        }
+    .footer .nav__link {
+        font-size: 12px;
+        line-height: 15px;
     }
 }
