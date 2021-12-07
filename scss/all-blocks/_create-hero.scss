@@ -1,0 +1,46 @@
+.create-hero__inner {
+    padding: 134px 85px;
+    color: $light-cream;
+    background-image: url("../../images/jpg/create-hero/1x/create-hero-image.jpg");
+    background-size: 1475px 983px;
+    background-position: 0 center;
+    border-radius: 10px;
+}
+
+.create-hero__heading {
+    margin-bottom: 32px;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.create-hero__text {
+    max-width: 445px;
+    width: 100%;
+    margin-bottom: 0;
+    opacity: 0.8;
+}
+
+@media only screen and(max-width: 1000px) {
+    .create-hero__inner {
+        background-position: 0 center;
+        background-position: right -500px center;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .create-hero__inner {
+        background-size: 1104px 736px;
+        background-position: 0 center;
+    }
+
+    .create-hero__heading {
+        margin-bottom: 24px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .create-hero__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
