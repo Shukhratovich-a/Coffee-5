@@ -15,6 +15,8 @@
 
 .discovery__heading {
     margin-bottom: 32px;
+    font-size: 40px;
+    line-height: 48px;
 }
 
 .discovery__text {
@@ -196,7 +198,7 @@
 }
 
 @media only screen and(max-width: 350px) {
-    .discovery .container{
+    .discovery .container {
         padding-bottom: 593px;
     }
 
