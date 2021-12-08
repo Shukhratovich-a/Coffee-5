@@ -63,11 +63,11 @@
     .create-hero__inner {
         position: relative;
         z-index: -1;
-        background-size: 744px 496px;
-        background-position: 0;
         padding: 100px 24px;
         padding-bottom: 136px;
         text-align: center;
+        background-size: 744px 496px;
+        background-position: right -225px center;
 
         &::before {
             content: "";
@@ -92,5 +92,20 @@
     .create-hero__text {
         max-width: 280px;
         margin: 0 auto;
+    }
+}
+
+@media only screen and(max-width: 375px) {
+    .create-hero__inner{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .create-hero__heading{
+        font-size: 36px;
+    }
+
+    .create-hero__text{
+        max-width: 230px;
     }
 }
