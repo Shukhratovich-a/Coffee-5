@@ -1,4 +1,4 @@
-.steps .container{
+.steps .container {
     margin-bottom: 200px;
 }
 
@@ -76,6 +76,31 @@
     margin-bottom: 0;
 }
 
+.create-steps .steps__list {
+    padding-bottom: 0px;
+}
+
+.steps__inner {
+    padding: 115px 85px;
+    padding-bottom: 100px;
+    color: $light-cream;
+    background-color: $dark-grey;
+    border-radius: 10px;
+}
+
+.create-steps .step {
+    &::after {
+        background-color: transparent;
+    }
+}
+
+@media only screen and(max-width: 1085px) {
+    .steps__inner {
+        padding: 112px 40px;
+        padding-bottom: 70px;
+    }
+}
+
 @media only screen and(max-width: 900px) {
     .step__heading {
         margin-bottom: 40px;
@@ -94,17 +119,85 @@
 }
 
 @media only screen and(max-width: 768px) {
-    .steps .container{
+    .steps .container {
         margin-bottom: 150px;
     }
 
-    .steps__list{
+    .steps__list {
         margin-bottom: 44px;
+    }
+
+    .create-steps .steps__list {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and(max-width: 666px) {
+    .steps .container{
+        margin-bottom: 120px;
+    }
+    
+    .steps__inner {
+        padding: 80px 24px;
+    }
+
+    .create-steps {
+        .steps__heading {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        .steps__list {
+            grid-template-columns: none;
+            margin-bottom: 0px;
+        }
+
+        .step {
+            max-width: 330px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+
+            &::before {
+                content: none;
+            }
+
+            &::after {
+                content: none;
+            }
+        }
+
+        .step + .step {
+            margin-top: 56px;
+        }
+
+        .step__heading {
+            max-width: 100%;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+
+        .step__heading__count {
+            margin-bottom: 24px;
+        }
+
+        .step__heading__text {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .step__text {
+            max-width: none;
+        }
+
+        .steps__link {
+            margin: 0 auto;
+        }
     }
 }
 
 @media only screen and(max-width: 590px) {
-    .steps .container{
+    .steps .container {
         margin-bottom: 120px;
     }
 
@@ -138,6 +231,7 @@
     }
 
     .step__heading {
+        max-width: 100%;
         margin: 0 auto;
         margin-bottom: 24px;
     }
@@ -155,7 +249,7 @@
         max-width: none;
     }
 
-    .steps__link{
+    .steps__link {
         margin: 0 auto;
     }
 }
