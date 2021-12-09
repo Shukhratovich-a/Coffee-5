@@ -76,16 +76,16 @@
     margin-bottom: 0;
 }
 
-.create-steps .steps__list {
-    padding-bottom: 0px;
-}
-
 .steps__inner {
     padding: 115px 85px;
     padding-bottom: 100px;
     color: $light-cream;
     background-color: $dark-grey;
     border-radius: 10px;
+}
+
+.create-steps .steps__list {
+    margin-bottom: 0px;
 }
 
 .create-steps .step {
@@ -133,10 +133,10 @@
 }
 
 @media only screen and(max-width: 666px) {
-    .steps .container{
+    .steps .container {
         margin-bottom: 120px;
     }
-    
+
     .steps__inner {
         padding: 80px 24px;
     }
